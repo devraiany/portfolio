@@ -1,0 +1,564 @@
+/* Importar fontes */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+
+/* Inicio Estilos gerais */
+:root {
+    /* Definir variáveis de cores */
+    --blue: rgb(211, 153, 218);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, rgba(24, 0, 35, 1), rgb(55, 33, 58), rgb(7, 0, 7));
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #F5F5F5;
+}
+
+strong {
+    /* Configurações letras em negrito destaque */
+    color: rgba(24, 0, 35, 1) ;
+    font-style: italic;
+}
+
+.principal {
+    max-width: 800px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    text-align: center;
+    /* Centralizar elementos dentro do main */
+    position: relative;
+    /* Adicionar posição relativa para conter o pseudo-elemento */
+}
+
+h1 {
+    /* Titulo do site */
+    font-family: 'Archivo Black', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    min-width: 320;
+    font-size: 75px;
+    line-height: 70px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    text-shadow: 0px 0px 13.3769px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2.82488px);
+    text-align: center;
+}
+/* Fim Estilos gerais */
+
+
+
+/* Inicio Estilos do menu de todas as páginas*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.47);
+    height: 60px;
+}
+
+header .menu {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .menu a {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 200;
+    margin: 10px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+header .menu a:hover {
+    color: var(--blue);  /* Outra cor ao passar o mouse no menu */
+}
+/* Fim Estilos do menu */
+
+
+
+/* Inicio página 1 */
+/* Inicio Estilos do conteúdo principal Main */
+.paragrafo1 {
+    /* Parágrafo abaixo do título */
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.destaquesub {
+    color: rgb(224, 224, 124);
+    font-style: bold;
+}
+
+.redes-sociais {
+    margin-top: 80px; /* Espaçamento superior */
+    display: flex;
+    justify-content: center; /* Centralizar os ícones horizontalmente */
+    align-items: center;
+}
+
+.redes-sociais a {
+    display: inline-block;
+    margin: 10px;
+}
+
+.redes-sociais img {
+    max-width: 40px; /* Tamanho dos ícones */
+}
+
+.caixa-pagina1 {
+    /* Caixa de Projetos */
+    min-width: 320px;
+    max-width: 800px;
+    align-items: center;
+    background-color: #f5f5f5de; /* Fundo cinza claro */
+    color: #000000;
+    margin-top: 80px; /* Espaçamento superior */
+    margin-left: 200px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    width: 380px;
+    height: 586px;
+    top: 5060px;
+    box-shadow: #000000be;
+}
+
+h2 {
+    /* Titulo Caixa de Projetos */
+    font-size: 35px;
+    margin-top: 0;
+    font-style: bold;
+}
+
+.pagina1 h3 {
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.pagina1 img {
+    max-width: 250px; /* Tamanho da imagem do projeto */
+    margin-top: -10px;
+    border-radius: 10px;
+}
+
+.saiba-mais {
+    /* Botão saiaba mais da Caixa de Projetos */
+    margin-top: 25px;
+    background-color:rgb(32, 0, 32); /* Cor de fundo roxo */
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.saiba-mais:hover {
+    background-color: rgb(171, 121, 184); /* Cor de destaque ao passar o mouse */
+}
+
+.caixa-skills {
+    /* Caixa de Skills */
+    align-items: center;
+    background-color: #f5f5f5de; /* Fundo cinza claro */
+    color: #000000;
+    margin-top: 20px; /* Espaçamento superior */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    width: 380px;
+    height: 586px;
+    box-shadow: #000000be;
+}
+
+.caixa-skills h2, .caixa-skills h3 {
+    /* Titulos Skills */
+    margin: 0;
+}
+
+.skills {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills img {
+    max-width: 80px; /* Tamanho dos ícones de skills */
+    margin: 20px;
+    padding-top: 10px;
+    box-shadow: #000000;
+}
+
+.caixa-eu {
+    /* Caixa sobre mim */
+    min-width: 320px;
+    max-width: 800px;
+    align-items: center;
+    background-color: #f5f5f5de; /* Fundo cinza claro */
+    color: #000000;
+    margin-top: -700px; /* Espaçamento superior */
+    margin-left: 300px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: #000000ab;
+    width: 380px;
+    height: 630px;
+    align-items: center;
+}
+
+.caixa-eu h2 {
+    /* Titulo caixa sobre mim */
+    font-size: 35px;
+    margin-top: 0;
+    font-style: bold;
+    text-align: center;
+}
+
+.eu {
+    /* posições texto sobre mim */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto-sobre-mim {
+    max-width: 150px;
+    margin: 0px auto;
+    border-radius: 50%; /* Transforma a foto em uma forma redonda */
+    overflow: hidden; /* Evita que a imagem se estenda além do círculo */
+}
+
+.foto-sobre-mim img {
+    width: 100%; /* Garante que a imagem preencha todo o círculo */
+}
+
+.texto-sobre-mim {
+    /* Texto caixa sobre mim */
+    font-size: 15px;
+    flex: 1;
+    text-align: center;
+    line-height: 1.4;
+    color: #383838;
+    padding: 0px;
+}
+/* Fim Estilos do conteúdo principal Main */
+
+
+/* Inicio Media Queries para responsividade página 1 */
+@media (min-width: 1024px) {        /* Minimo de tela 1024px */
+    .caixa-pagina1 {
+        display: inline-block;
+        margin-left: 190px;
+        margin-right: 10px;
+        
+    }
+
+    .caixa-skills {
+        display: inline-block;
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+    .caixa-eu {
+        display: inline-block;
+        margin-left: 190px;
+        margin-right: 20px;
+    }
+
+
+    .caixa-pagina1, .caixa-skills, .caixa-eu {
+        display: inline-block;
+        margin-right: 10px;
+   
+    }
+}
+
+@media (max-width: 1024px) {      /* Maximo de tela 1024px */
+    .caixa-pagina1 {
+        display: inline-block;
+        margin-left: 20px;
+        margin-right: 10px;
+        
+    }
+
+    .caixa-skills {
+        display: inline-block;
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+    .caixa-eu {
+        display: inline-block;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: -700px;
+    }
+}
+
+@media (max-width: 768px) {     /* Maximo de tela 768px */
+
+    .caixa-eu {
+        margin-top: 20px;
+    }
+  
+    .caixa-pagina1,
+    .caixa-skills, .caixa-eu {
+        margin-left: 30px;
+        margin-right: 60px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {      /* Maximo de tela 480px */
+    .texto-sobre-mim {
+        line-height: 1.2;
+    }
+
+    .caixa-eu {
+        margin-top: 20px;
+    }
+
+    .caixa-pagina1,
+    .caixa-skills, .caixa-eu {
+        margin: 10px;
+    }
+
+    .skills img {
+        max-width: 60px;
+    }
+
+    .pagina1 img {
+        max-width: 100%;
+    }
+    
+    .foto-sobre-mim img {
+        max-width: 60%;
+    }
+}
+/* Fim Media página 1 */
+/* Fim página 1 */
+
+
+
+/* Pagina 2 */
+/* Inicio Estilos da página 2*/
+.sobremim {
+    /* Caixa de texto sobre mim */
+    max-width: 800px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.sobremim .projetos {
+    /* Projetos= classe para configuração do texto */
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.sobremim .projetos h2 {
+     /* subtitulo Quem sou eu? */
+    font-family: 'Archivo Black', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.sobremim .projetos p {
+    /* Paragrafos, texto */
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    line-height: 24px;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.215);
+}
+
+.fotosenai {
+    max-width: 40px;
+    position: absolute;
+    height: 412.21px;
+    left: -10px;
+    top: 617px;    
+}
+
+.fotorobotica {
+    max-width: 80px;
+    position: absolute;
+    height: 412.21px;
+    left: 981px;
+    top: 100px;
+}
+
+.fotofacul {
+    max-width: 80px;
+    position: absolute;
+    height: 412.21px;
+    left: 1018px;
+    top: 650px;
+}
+/* Fim Estilos da página 2*/
+
+
+/* Inicio Media Queries para responsividade página 2 */
+@media (max-width: 1024px) {      /* Responsividade das fotos Maximo de tela 1024px */
+    .fotofacul {
+        display: inline-block;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .fotosenai {
+        display: inline-block;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .fotorobotica {
+        display: inline-block;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 1050px) {     /* Responsividade das fotos Maximo de tela 1050px */
+    .fotofacul,
+    .fotorobotica, .fotosenai {
+        display: none;    /* Não aparece fotos */
+    }
+}
+
+@media (max-width: 480px) {      /* Responsividade das fotos Maximo de tela 480px */
+    .fotofacul,
+    .fotorobotica, .fotosenai {
+        display: none;     /* Não aparece fotos */
+    }
+}
+/* Fim Media página 2 */
+/* Fim página 2 */
+
+
+
+/* Pagina 3*/ 
+/* Estilos dos projetos */
+.projeto {
+    /* Configuração das caixas dos projetos */
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    width: 700px;
+    height: 430px;
+}
+
+.projeto h2 {
+    /* Titulos dos projetos */
+    font-family: 'Archivo Black', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.projeto p {
+    /* Descrição dos projetos */
+    font-weight: 400;
+    font-size: 16px;
+    color: #666666;
+    line-height: 24px;
+    text-align: center;
+}
+
+.projeto-info {
+    /* Classe para Configuração das posições dos elementos */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projeto-info img {
+    /* Classe para Configuração das imgs */
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.ferramentas {
+    /* Configuração posição dos simbolos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ferramentas img {
+    /* Configuração img simbolos */
+    max-width: 30px;
+    margin: 5px;
+}
+
+.botao-github {
+    /* Configuração botão github */
+    display: inline-block;
+    margin-top: 15px;
+    background-color: rgba(24, 0, 35, 1);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.botao-github:hover {
+    background-color: rgb(129, 98, 137);
+}
+/* Fim Estilos da página 3*/
+
+/* Inicio media query para ajustar o layout em telas menores, página 3 */
+@media (max-width: 768px) {
+    .projeto {
+        max-width: 100%;
+    }
+}
+/* Fim Media página 3 */
+/* Fim página 3 */
+
+
+
+/* Inicio Estilos do rodapé */
+footer {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.47);
+    color: #F5F5F5;      
+}
+/* Fim Estilos do rodapé */
