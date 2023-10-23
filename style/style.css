@@ -207,11 +207,8 @@ h2 {
     /* Caixa sobre mim */
     min-width: 320px;
     max-width: 800px;
-    align-items: center;
     background-color: #f5f5f5de; /* Fundo cinza claro */
     color: #000000;
-    margin-top: -700px; /* Espaçamento superior */
-    margin-left: 300px;
     text-align: center;
     padding: 20px;
     border-radius: 20px;
@@ -219,6 +216,10 @@ h2 {
     width: 380px;
     height: 630px;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .caixa-eu h2 {
@@ -260,98 +261,79 @@ h2 {
 /* Fim Estilos do conteúdo principal Main */
 
 
-/* Inicio Media Queries para responsividade página 1 */
-@media (min-width: 1024px) {        /* Minimo de tela 1024px */
-    .caixa-pagina1 {
-        display: inline-block;
-        margin-left: 190px;
-        margin-right: 10px;
-        
-    }
-
-    .caixa-skills {
-        display: inline-block;
-        margin-left: 20px;
-        margin-right: 20px;
-
-    }
-
-    .caixa-eu {
-        display: inline-block;
-        margin-left: 190px;
-        margin-right: 20px;
-    }
-
-
-    .caixa-pagina1, .caixa-skills, .caixa-eu {
-        display: inline-block;
-        margin-right: 10px;
-   
-    }
+/* Ajuste para centralização, responsividade */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@media (max-width: 1024px) {      /* Maximo de tela 1024px */
-    .caixa-pagina1 {
-        display: inline-block;
-        margin-left: 20px;
-        margin-right: 10px;
-        
-    }
-
-    .caixa-skills {
-        display: inline-block;
-        margin-left: 20px;
-        margin-right: 20px;
-
-    }
-
-    .caixa-eu {
-        display: inline-block;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: -700px;
-    }
+/* Ajustes de margem para as caixas */
+.caixa-pagina1,
+.caixa-skills,
+.caixa-eu,
+.form-container {
+    margin: 40px auto; /* Ajuste a margem superior conforme necessário */
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
 }
 
-@media (max-width: 768px) {     /* Maximo de tela 768px */
-
-    .caixa-eu {
-        margin-top: 20px;
-    }
-  
-    .caixa-pagina1,
-    .caixa-skills, .caixa-eu {
-        margin-left: 30px;
-        margin-right: 60px;
-        align-items: center;
-    }
+/* Estilos para o formulário */
+.form-container {
+    background-color: #f5f5f5de; /* Fundo cinza claro */
+    color: #000000;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: #000000ab;
+    width: 380px;
+    height: 270px;
+    align-items: center;
+    max-width: 800px;
+    margin: 40px auto; /* Ajuste a margem superior conforme necessário */
+    padding: 20px;
+    text-align: center;
 }
 
-@media (max-width: 480px) {      /* Maximo de tela 480px */
-    .texto-sobre-mim {
-        line-height: 1.2;
-    }
+.form-container h2 {
+    /* Estilos para o título do formulário */
+    font-family: 'Archivo Black', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: rgb(54, 54, 54);
+    margin-bottom: 20px;
+}
 
-    .caixa-eu {
-        margin-top: 20px;
-    }
+.contact-form {
+    /* Estilos para o formulário de contato */
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
 
-    .caixa-pagina1,
-    .caixa-skills, .caixa-eu {
-        margin: 10px;
-    }
+.contact-form input {
+    /* Estilos para os campos de entrada do formulário */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
 
-    .skills img {
-        max-width: 60px;
-    }
+.contact-form button {
+    /* Estilos para o botão de envio do formulário */
+    background-color: rgb(206, 184, 95);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
-    .pagina1 img {
-        max-width: 100%;
-    }
-    
-    .foto-sobre-mim img {
-        max-width: 60%;
-    }
+.contact-form button:hover {
+    /* Estilos para o botão de envio do formulário ao passar o mouse */
+    background-color: rgb(129, 98, 137);
 }
 /* Fim Media página 1 */
 /* Fim página 1 */
