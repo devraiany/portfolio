@@ -22,7 +22,6 @@ body {
 strong {
     /* Configurações letras em negrito destaque */
     color: rgba(24, 0, 35, 1) ;
-    font-style: italic;
 }
 
 .principal {
@@ -51,8 +50,6 @@ h1 {
     text-align: center;
 }
 /* Fim Estilos gerais */
-
-
 
 /* Inicio Estilos do menu de todas as páginas*/
 header {
@@ -84,6 +81,21 @@ header .menu a:hover {
 /* Fim Estilos do menu */
 
 
+/* CSS Adicional para os ícones */
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+/* Ajuste para centralização dos ícones e botão */
+.caixa-pagina1 .pagina1 {
+    text-align: left;
+}
+
+.caixa-pagina1 .saiba-mais {
+    text-align: center;
+}
 
 /* Inicio página 1 */
 /* Inicio Estilos do conteúdo principal Main */
@@ -115,23 +127,68 @@ header .menu a:hover {
     max-width: 40px; /* Tamanho dos ícones */
 }
 
+/* Estilos base para .caixa-pagina1 */
 .caixa-pagina1 {
-    /* Caixa de Projetos */
-    min-width: 320px;
-    max-width: 800px;
     align-items: center;
     background-color: #f5f5f5de; /* Fundo cinza claro */
     color: #000000;
-    margin-top: 80px; /* Espaçamento superior */
-    margin-left: 200px;
-    text-align: center;
-    padding: 20px;
+    margin-top: 20px; /* Espaçamento superior */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    padding: 50px; /* Aumentar o padding para espaçamento interno maior */
     border-radius: 20px;
-    width: 380px;
-    height: 586px;
-    top: 5060px;
-    box-shadow: #000000be;
+    width: 580px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Ajustar a sombra da caixa */
+    margin-bottom: 40px; /* Aumentar o espaçamento embaixo da caixa */
 }
+
+.caixa-pagina1 h2 {
+    margin: 0;
+}
+
+.caixa-pagina1 h3 {
+    margin-top: 20px;
+}
+
+.caixa-pagina1 p {
+    margin-top: 10px;
+}
+
+.caixa-pagina1 ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.caixa-pagina1 ul li {
+    margin-bottom: 5px;
+}
+
+.saiba-mais {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.saiba-mais:hover {
+    background-color: #0056b3;
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .caixa-pagina1 {
+        width: 100%;
+        padding: 30px;
+        font-size: 16px;
+    }
+}
+
 
 h2 {
     /* Titulo Caixa de Projetos */
@@ -180,8 +237,7 @@ h2 {
     padding: 20px;
     border-radius: 20px;
     width: 380px;
-    height: 586px;
-    box-shadow: #000000be;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Ajustar a sombra da caixa */
 }
 
 .caixa-skills h2, .caixa-skills h3 {
@@ -190,17 +246,25 @@ h2 {
 }
 
 .skills {
-    margin-top: 60px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+    gap: 30px 15px; /* Espaçamento entre as linhas (30px) e entre as colunas (15px) */
+    margin-top: 40px; /* Espaçamento superior */
     justify-content: center;
 }
 
 .skills img {
-    max-width: 80px; /* Tamanho dos ícones de skills */
-    margin: 20px;
+    width: 60px; /* Largura reduzida para os ícones */
+    height: 60px; /* Altura reduzida para os ícones */
+    margin: 0 auto; /* Centralizar os ícones */
     padding-top: 10px;
-    box-shadow: #000000;
+    /* box-shadow removido para deixar os ícones normais */
+}
+
+.skills::after {
+    content: ''; /* Adiciona um pseudo-elemento para o espaço extra na última linha */
+    grid-column: 1 / -1; /* Ocupa todas as colunas */
+    height: 30px; /* Espaço extra entre a última linha e a borda inferior */
 }
 
 .caixa-eu {
@@ -285,14 +349,10 @@ main {
     color: #000000;
     text-align: center;
     border-radius: 20px;
-    box-shadow: #000000ab;
-    width: 380px;
-    height: 270px;
-    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra suave */
     max-width: 800px;
     margin: 40px auto; /* Ajuste a margem superior conforme necessário */
     padding: 20px;
-    text-align: center;
 }
 
 .form-container h2 {
@@ -300,41 +360,50 @@ main {
     font-family: 'Archivo Black', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 24px;
-    color: rgb(54, 54, 54);
+    color: #363636; /* Cor do título */
     margin-bottom: 20px;
 }
 
 .contact-form {
     /* Estilos para o formulário de contato */
-    display: flex;
-    flex-direction: column;
     max-width: 400px;
     margin: 0 auto;
 }
 
-.contact-form input {
+.contact-form input,
+.contact-form textarea {
     /* Estilos para os campos de entrada do formulário */
     margin: 10px 0;
     padding: 10px;
+    width: 100%;
     border-radius: 4px;
     border: 1px solid #ddd;
+    box-sizing: border-box; /* Garante que o padding não altere a largura do elemento */
+}
+
+.contact-form textarea {
+    /* Estilos específicos para o campo de mensagem */
+    height: 150px; /* Altura fixa para a área de texto */
+    resize: vertical; /* Permite redimensionar verticalmente */
 }
 
 .contact-form button {
     /* Estilos para o botão de envio do formulário */
-    background-color: rgb(206, 184, 95);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    background-color: rgb(206, 184, 95); /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 4px; /* Borda arredondada */
+    border: none; /* Sem borda */
+    cursor: pointer; /* Ícone de cursor ao passar */
+    transition: background-color 0.3s; /* Transição suave */
+    width: 100%; /* Botão ocupa toda a largura do seu container */
 }
 
 .contact-form button:hover {
     /* Estilos para o botão de envio do formulário ao passar o mouse */
-    background-color: rgb(129, 98, 137);
+    background-color: rgb(129, 98, 137); /* Cor de fundo alterada */
 }
+
 /* Fim Media página 1 */
 /* Fim página 1 */
 
